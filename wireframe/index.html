@@ -1,0 +1,51 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Grievance Triage — Wireframe</title>
+<style>
+body{font-family:Arial,sans-serif;margin:0;background:#f4f6f8;color:#1f2933}
+header{background:#17324d;color:white;padding:18px 26px}
+main{max-width:1100px;margin:24px auto;padding:0 16px}
+.grid{display:grid;grid-template-columns:1fr 1fr;gap:16px}
+.card{background:white;border:1px solid #d6dde3;border-radius:10px;padding:18px}
+.muted{color:#5b6570;font-size:14px}.tag{display:inline-block;background:#eaf3f1;padding:5px 9px;border-radius:14px;font-size:12px}
+button{padding:10px 13px;border:0;border-radius:6px;margin:5px 6px 0 0;cursor:pointer}
+.primary{background:#2d6a62;color:white}.secondary{background:#e8edf1;color:#202a33}
+textarea{width:100%;min-height:90px;box-sizing:border-box;padding:10px;border:1px solid #c8d0d7;border-radius:6px}
+@media(max-width:700px){.grid{grid-template-columns:1fr}}
+</style>
+</head>
+<body>
+<header><strong>Municipal Grievance Desk</strong><div class="muted" style="color:#dce8ef">One Complaint, Five Departments · Prototype wireframe</div></header>
+<main>
+<h2>Review complaint</h2>
+<p class="muted">Static wireframe only — actions are illustrative and do not call the API.</p>
+<div class="grid">
+<section class="card">
+<span class="tag">C-DEMO-014 · Web portal</span>
+<h3>Water is leaking near the bus stop</h3>
+<p><strong>Location:</strong> Ward 4</p>
+<p><strong>Received:</strong> Today, 10:42 AM (demo data)</p>
+<h4>AI routing suggestion</h4><p>Water <span class="tag">Confidence: 0.80 (illustrative)</span></p>
+<p class="muted">Reason: complaint text contains water-related terms. Staff must verify.</p>
+<h4>Possible duplicate</h4><p>C-001 — “Water pipe is leaking near the bus stop”</p>
+<p class="muted">Similar wording; confirm that both reports describe the same incident.</p>
+<h4>Safety review</h4><p>No configured phrase matched. This does not prove the complaint is safe.</p>
+</section>
+<section class="card">
+<h3>Staff decision</h3>
+<label for="reason">Reason / notes</label>
+<textarea id="reason" placeholder="Add why you are confirming, editing or rejecting the suggestion"></textarea>
+<div><button class="primary" onclick="alert('Wireframe only: no action was saved.')">Confirm route</button>
+<button class="secondary" onclick="alert('Wireframe only: no action was saved.')">Edit route</button>
+<button class="secondary" onclick="alert('Wireframe only: no action was saved.')">Reject suggestion</button></div>
+<hr>
+<h4>Audit history</h4><p class="muted">No review action recorded in this static mockup.</p>
+<h4>Resident status draft</h4><p>Your complaint has been received and is awaiting staff review.</p>
+</section>
+</div>
+</main>
+</body>
+</html>

@@ -1,0 +1,13 @@
+id,text,channel,location,department,label_duplicate,safety_example
+S-001,Water pipe is leaking near the bus stop,web_portal,Ward 4,Water,no,no
+S-002,A pipe is leaking by the bus stop,phone_transcript,Ward 4,Water,yes:S-001,no
+S-003,Garbage has not been collected from market road,social_media,Market Road,Sanitation,no,no
+S-004,Waste is still lying on the market road,in_person,Market Road,Sanitation,yes:S-003,no
+S-005,Street light is broken outside the community hall,web_portal,Ward 2,Electrical,no,no
+S-006,The lamp near the community hall is not working,phone_transcript,Ward 2,Electrical,yes:S-005,no
+S-007,"Large open manhole near school, children could fall in",social_media,Ward 5,Engineering,no,yes
+S-008,Pothole on the main road,web_portal,Ward 1,Engineering,no,no
+S-009,Water supply stopped since morning,in_person,Ward 3,Water,no,no
+S-010,Exposed wire beside the footpath; risk of electric shock,phone_transcript,Ward 6,Electrical,no,yes
+S-011,Please clean the overflowing public bin,web_portal,Ward 2,Sanitation,no,no
+S-012,Road has collapsed near the bridge,social_media,Ward 7,Engineering,no,yes
